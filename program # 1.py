@@ -1,12 +1,16 @@
-temperature = float(input("Enter temperature in centigrade: "))
+marks = int(input("Enter student marks (1-100): "))
 
-if temperature < 0:
-    print("FREEZING")
-elif 0 <= temperature <= 15:
-    print("COLD")
-elif 16 <= temperature <= 30:
-    print("WARM")
-elif 31 <= temperature <= 40:
-    print("HOT")
+if marks < 50:
+    print("Grade F")
+elif 50 <= marks <= 60:
+    print("Grade E")
+elif 61 <= marks <= 70:
+    print("Grade D")
+elif 71 <= marks <= 80:
+    print("Grade C")
+elif 81 <= marks <= 90:
+    print("Grade B")
+elif 91 <= marks <= 100:
+    print("Grade A")
 else:
-    print("VERY HOT")
+    print("Invalid marks. Please enter a value between 1-100.")
